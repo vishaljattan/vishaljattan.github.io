@@ -80,72 +80,39 @@
         h1 {
             text-align: center;
         }
-        /* footer social icon hover */
-
-        
-        .social-menu ul {
-            position: absolute;
-            padding: 10px;
-            top: 133%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            
-            display: inline-flex;
-        }
-        
-        .social-menu ul li {
-            list-style: none;
-            margin: 0 10px;
-        }
-        
-        .social-menu ul li .fa {
-            color: #000000;
-            font-size: 25px;
-            line-height: 50px;
-            transition: .5s;
-        }
-        
-        .social-menu ul li .fa:hover {
-            color: #ffffff;
-        }
-        
-        .social-menu ul li a {
-            position: relative;
-            display: block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: white;
-            text-align: center;
-            transition: 0.5s;
-            transform: translate(0, 0px);
-            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-        }
-        
-        .social-menu ul li a:hover {
-            transform: rotate(0deg) skew(0deg) translate(0, -10px);
-        }
-        
-        .social-menu ul li:nth-child(1) a:hover {
-            background-color: #0077B5;
-        }
-        
-        .social-menu ul li:nth-child(2) a:hover {
-            background-color: #55acee;
-        }
-        
-        .social-menu ul li:nth-child(3) a:hover {
-            background-color: #e4405f;
-        }
-        
-        .social-menu ul li:nth-child(4) a:hover {
-            background-color: #504e4e;
-        }
-        
+        /*button color */
         .button {
             color: #0f0f0f;
         }
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float:left;
+  border-right: 1px solid #bbb;
+}
+li {
+    border-left: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+
     </style>
 </head>
 
@@ -156,8 +123,15 @@
         </a>
         <h1>$M4ST3RS3C</h1>
         <p>A website created by vishal jattan</p>
-        <ul>
+        
     </div>
+    
+    <ul>
+  <li><a class="active" href="https:vishaljattan.github.io">Home</a></li>
+  <li style="float: right;"><a href="https://vishaljattan.github.io/contact">Contact</a></li>
+  <li><a href="https://vishaljattan.github.io/blog/about/">About</a></li>
+</ul>
+    
     <div>
         <h1 style="text-align: center;"> Brief Site Map </h1>
     </div>
@@ -192,15 +166,8 @@
         </div>
     </div>
 
-    <div class=" social-menu ">
-
-        <ul>
-            <li><a href="https://www.linkedin.com/in/vishal-jattan-111210211/" target="_blank"><i class="fa fa-linkedin "></i></a></li>
-            <li><a href=" https://twitter.com/jattanvishal/" target="_blank"><i class="fa fa-twitter "></i></a></li>
-            <li><a href="https://instagram.com/_vishal_jatan_/" target="_blank"><i class="fa fa-instagram "></i></a></li>
-            <li><a href="https://github.com/vishaljattan/" target="_blank"><i class="fa fa-github "></i></a></li>
-        </ul>
+    
 </body>
-</div>
+
 
 </html>
